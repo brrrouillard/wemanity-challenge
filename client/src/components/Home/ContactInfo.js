@@ -4,8 +4,8 @@ import "./_ContactInfo.css";
 export class ContactInfo extends Component {
   render() {
     return <div id="ContactInfo">
-      <div id="name">Matthieu Brouillard</div>
-      <div id="number">0470 69 91 40</div>
+      <div id="name">{this.props.contact.firstName} {this.props.contact.lastName}</div>
+      <div id="number">{this.props.contact.number}</div>
       <button id="editButton">Edit</button>
     </div>;
   }

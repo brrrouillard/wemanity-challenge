@@ -32,30 +32,30 @@ router.post("/", (req, res) => {
   }
 });
 
-router.get("/:data", (req, res) => {
+router.get("/:contact", (req, res) => {
   Contact.find(
     {
       $or: [
         {
           number: {
-            $regex: "^[+]" + req.params.data.slice(1)
+            $regex: "^[+]" + req.params.contact.slice(1)
           }
         },
         {
           firstName: {
-            $regex: "^" + req.params.data
+            $regex: "^" + req.params.contact
           }
         },
         {
           lastName: {
-            $regex: "^" + req.params.data
+            $regex: "^" + req.params.contact
           }
         }
       ]
     },
     (err, contacts) => {
       if (err) res.status(400).send({ msg: "Error" + err });
-      res.status(400).send(contacts);
+      res.status(200).send(contacts);
     }
   );
 });

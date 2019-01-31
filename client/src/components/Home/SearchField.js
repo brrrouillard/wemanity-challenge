@@ -10,8 +10,11 @@ export class SearchField extends Component {
   }
 
   handleInputChange = event => {
-    this.props.fetchContacts(event.target.value);
-    // this.setState({ input: event.target.value });   
+    if (event.target.value.length > 1) {
+      console.log(event.target.value);
+      this.props.fetchContacts(event.target.value);
+    }
+    // this.setState({ input: event.target.value });
   };
 
   render() {
