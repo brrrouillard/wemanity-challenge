@@ -1,0 +1,47 @@
+#AddContactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AddContactContainer > #title {
+    color: white;
+    font-weight: 200;
+    margin: 2% 0;
+}
+
+#AddContactContainer > h5 {
+    margin: 1% 0;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+#AddContactContainer > input {
+    font-weight: 100;
+    color: #333;
+    margin: 2% 0;
+    font-Size: 150%;
+    width: 80%;
+    padding: 1%;
+}
+
+#AddContactContainer > button {
+    background: #fff;
+    border: 0;
+    color: #00b5ad;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 3%;
+    font-size: 220%;
+    padding: 1%;
+}
+
+#AddContactContainer > button:hover {
+    transition-duration: 150ms;
+    opacity: 0.95;
+}
+
+#AddContactContainer > button:active {
+    transform: scale(0.95);
+}

@@ -26,13 +26,26 @@ export class SearchContainer extends Component {
       .catch(err => console.log(err));
   };
 
+  componentDidMount() {
+    // Load before first search
+    this.fetchContacts("");
+  }
+  navigateToAdd = () => {
+    this.props.history.push("/add");
+  };
+
   render() {
     return (
       <div id="SearchContainer">
         <SearchField fetchContacts={this.fetchContacts} />
         {this.state.contactsList.map(contact => (
-          <ContactInfo contact={contact} key={contact._id}/>
+          <ContactInfo
+            contact={contact}
+            key={contact._id}
+            history={this.props.history}
+          />
         ))}
+        <button onClick={this.navigateToAdd}>New Contact</button>
       </div>
     );
   }

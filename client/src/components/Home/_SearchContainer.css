@@ -3,3 +3,27 @@
     flex-direction: column;
     align-items: center;
 }
+
+#SearchContainer > button {
+    background: #fff;
+    border: 0;
+    color: #00b5ad;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 3%;
+    font-size: 220%;
+    padding: 1%;
+    transition-duration: 120ms;
+}
+
+#SearchContainer > button:hover {
+    transition-duration: 120ms;
+    opacity: 0.95;
+    transform: scale(0.96);
+}
+
+#SearchContainer > button:active {
+    transition-duration: 120ms;
+    transform: scale(0.93);
+}
