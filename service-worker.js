@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wemanity-challenge/precache-manifest.09468e25799ad38b7f8e34b35482b441.js"
+  "/wemanity-challenge/precache-manifest.aef0e16c0a5c9e03aacb95a2194934dc.js"
 );
 
 workbox.clientsClaim();

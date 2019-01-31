@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/wemanity-challenge/static/css/main.f8281f01.chunk.css"
   },
   {
-    "revision": "1acf5b3a4000c81e499248dd813d48ce",
+    "revision": "fc9f924685c416aac768cceb8dacd7e8",
     "url": "/wemanity-challenge/index.html"
   }
 ];
