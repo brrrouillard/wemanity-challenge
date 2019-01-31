@@ -1,0 +1,19 @@
+#Header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Header > #title {
+    color: white;
+    font-size: 350%;
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+
+#Header > hr {
+    color: white;
+    opacity: 0.3;
+    width: 50%;
+}

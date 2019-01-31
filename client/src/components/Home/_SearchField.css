@@ -1,0 +1,11 @@
+#SearchField {
+    width: 80%;
+    margin-bottom: 2%;
+}
+#SearchField > #search-input {
+    font-weight: 100;
+    color: #333;
+    margin: 3% 0;
+    font-Size: 150%;
+    width: 100%;
+}
