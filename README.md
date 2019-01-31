@@ -7,7 +7,7 @@
 ## Installing and Running
 
 ### Client
-Navigate to `./client` then run `npm start` . You can now access the app on [localhost:3000/](https://wemanity-kata.herokuapp.com/contacts/)
+Navigate to `./client/` then run `npm start` . You can now access the app on [localhost:3000/](http://localhost:3000/)
 
 ### Server
 
