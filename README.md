@@ -24,14 +24,14 @@ Then just run `node server.js`
 
 
 ## Missing
-Since I did this kata under time pressure, I tried to focus on the main functionnalities. There is great room for improvement, especially in UI / UX, code cleaning and comments. 
+Since I did this Kata under time pressure, I tried to focus on the main functionnalities. There is great room for improvement, especially in UI / UX, responsiveneness (I didn't have time to test it for mobile) code cleaning and comments. 
 
 I have to admit that creating a full app, which includes designing, writting an entire API (and deploying it) and creating a multi-pages web app under 4 hours challenged me a lot. 
 
 Anyway, it was a pretty cool experience since I'm not used to work under pressure !
 
 ## Built With
-* React Native
+* React
 * Express (nodeJS)
 * MongoDB
 * [Visual Studio Code](https://code.visualstudio.com/) 
