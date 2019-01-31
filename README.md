@@ -5,9 +5,17 @@
 - Any web navigator
 
 ## Installing and Running
-You can access the API live on [Heroku](https://wemanity-kata.herokuapp.com/contacts/).
 
-To run on a local machine :
+### Client
+Navigate to `./client` then run `npm start` . You can now access the app on [localhost:3000/](https://wemanity-kata.herokuapp.com/contacts/)
+
+### Server
+
+#### Live
+You can already access the API live on [Heroku](https://wemanity-kata.herokuapp.com/contacts/).
+
+#### Local
+If you want to run it on a local machine :
 You will have to create a ` ./config/private_keys.js ` file which exports a mongoURI variable containing the database credentials (which I didn't include here for obvious security reasons).
 
 Then just run `node server.js`
