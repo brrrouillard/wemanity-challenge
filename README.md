@@ -6,19 +6,31 @@
 
 ## Installing and Running
 
-### Client
-Navigate to `./client/` then run `npm install` then  `npm start` . You can now access the app on [localhost:3000/](http://localhost:3000/)
-
-### Server
-
-#### Live
+### Live
 You can already access the API live on [Heroku](https://wemanity-kata.herokuapp.com/contacts/).
 
-#### Local
-If you want to run it on a local machine :
-You will have to create a ` ./config/private_keys.js ` file which exports a mongoURI variable containing the database credentials (which I didn't include here for obvious security reasons).
+Navigate to `./client/` then run `npm install` then  `npm start` . You can now access the app on [localhost:3000/](http://localhost:3000/)
 
-Then just run `npm install` then `node server.js`
+### Local
+
+If you want to run it on a local machine :
+1. You will have to create a ` ./config/private_keys.js ` file (which I didn't include here for obvious security reasons) with the following structure 
+~~~~
+const keys = {
+    mongoURI:
+      "YOUR_MONGO_URI"
+  };
+  
+  module.exports = keys;
+~~~~
+
+2. To redirect AJAX calls, navigate to `./client/src/` and change the apiURL variable at the beginning of the following files : `./Home/SearchContainer.js`, `./EditContact/EditContactContainer.js` and `./AddContact/AddContactContainer.js`
+
+3. Install dependencies running `npm install` in the root folder and in `./client/`
+
+4. Launch the server running `node server.js` in the root folder
+
+5. Launch the client running `npm start` in the `./client/` folder.
 
 
 ## API Endpoints
